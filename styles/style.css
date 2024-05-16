@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, strong{
+    color: #232e35;
+}
+
+.p1 {
+    font-size: 1rem; /*16px*/
+    line-height: 1,9rem;
+}
+
+p,
+span,
+label,
+input,
+textarea,
+li {
+    
+    color: #656d72;
+}
+a {
+    text-decoration: none;
+}
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-contaier {
+        width: 90%;
+    }
+}
+
+/* Pretitles */
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: #656d72;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0,9rem;
+}
+
+.pre-title::before {
+    content:"";
+    width: 30px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+    
+
+}
+
+/*logo dan navigation menu*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.li-navbar:hover {
+    background-color: greenyellow;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.3s;
+    border-radius: 10px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a {
+    color: #232e35;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    color: #232e35;
+}
+
+/*burger*/
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 7px;
+    transition: all .3s;
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+/*Ini Bagian-Hero*/
+
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+
+.hero-right img {
+    width: 60vh;
+
+}
+
+.hero-right  {
+    display: flex;
+    justify-content: center;
+}
+
+/*About Me Section*/
+#aboutme {
+    background-color: #c0c0c0;
+    padding: 180px;
+}
+
+.aboutme-main-container {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.section-title{
+    color:black ;
+}
+
+.aboutme-bawah {
+    display: flex;
+    text-align: center;
+}
+
+.p2 {
+    font-size: 25px;
+}
+
+/*Ini bagian Project*/
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 2rem;
+}
+
+#project {
+    padding: 200px;
+}
+
+.projectmain-container {
+    margin-bottom: 30px;
+}
+
+
+.project {
+    border-radius: 0,7rem;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    gap: 3rem;
+}
+
+.project-cover {
+    height: 250px;
+}
+
+.project-cover1 img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.project-cover2 img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.project-cover3 img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+/*Bagian Kontak*/
+
+#contact {
+    padding: 6rem 0;
+    background-color:antiquewhite
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 5rem;
+}
+.contact-left img {
+    width: 60vh;
+}
+
+.contact-left {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-left {
+    justify-content: center;
+}
+.contact-item {
+    display: flex;
+    gap: 1,5rem;
+    margin-bottom: 2,5rem;
+}
+
+.contact-item-icon {
+    width: 53px;
+    height: 53px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-item-detail h4 {
+    margin-bottom: 0,6rem;
+}
+
+/* Footer Bagian*/
+
+footer {
+    padding: 4rem 0;
+    background: #fbfbfb;
+    text-align: center;
+}
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons{
+    margin: 0 0,5rem;
+}
+
+.footer-icons svg {
+    fill: #3e3f40;
+}
+
+.footer-icons a:hover {
+    fill: #000;
+
+}
+
+
+
+
+
+
+
+
+
+
